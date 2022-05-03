@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: green;
+}
+
+.main {
+  background-color: rebeccapurple;
+}
+
+.main .secondary {
+  background-color: aquamarine;
+}
+
+.main--red {
+  background-color: crimson;
+}
+
+.main__blurb {
+  background-color: chartreuse;
+}
+/*# sourceMappingURL=styles.css.map */
