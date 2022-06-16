@@ -1,3 +1,15 @@
+@charset "UTF-8";
+/* 
+
+Breakpoints for mobile devices
+
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV. 
+
+*/
 *,
 *::before,
 *::after {
@@ -9,6 +21,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-size: 12px;
 }
 
 header {
@@ -26,26 +39,70 @@ header {
           align-items: center;
 }
 
-.hamburger .bar {
+.logo {
+  font-size: 24px;
+}
+
+.navbar {
+  /*todo*/
+}
+
+.hamburger__bar {
   border: 1px solid black;
   border-radius: 3px;
   width: 20px;
   margin: 5px 0 5px 0;
 }
 
-.main {
-  background-color: rebeccapurple;
+.hero {
+  text-align: center;
+  padding: 30px;
+  margin-top: 100px;
 }
 
-.main .secondary {
-  background-color: aquamarine;
+.hero * {
+  margin: 10px 0 10px 0;
 }
 
-.main--red {
-  background-color: crimson;
+.hero__title {
+  font-size: 22px;
 }
 
-.main__blurb {
-  background-color: chartreuse;
+@media (min-width: 480px) {
+  .hero__title {
+    font-size: 24px;
+  }
+}
+
+.hero__subtitle {
+  font-size: 16px;
+}
+
+.contact-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 20px 0 20px;
+}
+
+.contact-icons .icon img {
+  width: 30px;
+}
+
+/*todo*/
+.separator {
+  display: none;
+  border: 1px solid #85c0d7;
+  border-top-left-radius: 150%;
+  border-top-right-radius: 150%;
+  height: 100px;
+  background: #85c0d7;
+  width: 150%;
+  text-align: center;
+  position: absolute;
+  left: -25%;
 }
 /*# sourceMappingURL=styles.css.map */
