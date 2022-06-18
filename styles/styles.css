@@ -10,18 +10,69 @@ Breakpoints for mobile devices
 1201px and more — Extra large screens, TV. 
 
 */
+@font-face {
+  font-family: Raleway;
+  src: url("../assets/fonts/Raleway/Raleway-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("../assets/fonts/Raleway/Raleway-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("../assets/fonts/Raleway/Raleway-SemiBold.ttf");
+  font-weight: 600;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("../assets/fonts/Raleway/Raleway-Bold.ttf");
+  font-weight: 700;
+  font-size: normal;
+}
+
+/*
+
+Value 	Common weight name
+100 	Thin (Hairline)
+200 	Extra Light (Ultra Light)
+300 	Light
+400 	Normal (Regular)
+500 	Medium
+600 	Semi Bold (Demi Bold)
+700 	Bold
+800 	Extra Bold (Ultra Bold)
+900 	Black (Heavy)
+950 	Extra Black (Ultra Black)
+
+*/
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Raleway';
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-size: 12px;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 18px;
 }
 
 header {
@@ -64,18 +115,8 @@ header {
   margin: 10px 0 10px 0;
 }
 
-.hero__title {
-  font-size: 22px;
-}
-
-@media (min-width: 480px) {
-  .hero__title {
-    font-size: 24px;
-  }
-}
-
 .hero__subtitle {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .contact-icons {
@@ -112,18 +153,44 @@ header {
 
 .card {
   text-align: center;
+  padding: 10px 10px 10px 10px;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  margin: 30px 10px 30px 10px;
+  border-radius: 15px;
+}
+
+.card div {
+  margin-top: 10px;
+}
+
+.card div:last-of-type {
+  margin-bottom: 10px;
 }
 
 .card__image img {
   width: 50px;
 }
 
-.card__title {
-  font-size: 20px;
-  font-weight: bold;
+.card__content {
+  font-size: 14px;
 }
 
-.card__content {
-  font-size: 16px;
+/* Scroll Animation */
+.reveal {
+  position: relative;
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  opacity: 0;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
 }
+
+.reveal.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+/* End Scroll Animation */
 /*# sourceMappingURL=styles.css.map */
