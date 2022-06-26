@@ -1,18 +1,19 @@
 @import './breakpoints';
 @import './colors';
 @import './fonts';
+@import './icons';
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'Raleway'
 }
 
 body {
   margin: 0;
   padding: 0;
   font-size: $mobileBodyFontSize;
+  font-family: 'Raleway';
 }
 
 h1 {
@@ -81,6 +82,7 @@ header {
   justify-content: space-evenly;
   padding: 0 20px 0 20px;
   .icon {
+    font-size: 26px;
     img {
       width: 30px;
     }
@@ -126,13 +128,19 @@ header {
     margin-bottom: 10px;
   }
 
+  &__header {
 
-  &__image {
-    img {
-      width: 50px;
+  }
+
+  &__icon {  
+    font-size: 26px;
+
+    svg, img {
+      width: 30px;
     }
   }
   &__title {
+
   }
   &__content {
     font-size: $mobileBodyFontSize;
@@ -154,3 +162,15 @@ header {
 }
 
 /* End Scroll Animation */
+
+footer {
+  text-align: center;
+}
+
+.footer-test {
+  font-size: 80px;
+  transition: 0.3s;
+  &:hover {
+    color:rgb(95, 141, 193);
+  }
+}

@@ -53,18 +53,69 @@ Value 	Common weight name
 950 	Extra Black (Ultra Black)
 
 */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../assets/icomoon/fonts/icomoon.eot?7kqn7n");
+  src: url("../assets/icomoon/fonts/icomoon.eot?7kqn7n#iefix") format("embedded-opentype"), url("../assets/icomoon/fonts/icomoon.ttf?7kqn7n") format("truetype"), url("../assets/icomoon/fonts/icomoon.woff?7kqn7n") format("woff"), url("../assets/icomoon/fonts/icomoon.svg?7kqn7n#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-codepen:before {
+  content: "\e900";
+}
+
+.icon-consultancy:before {
+  content: "\e901";
+}
+
+.icon-design:before {
+  content: "\e902";
+}
+
+.icon-dev:before {
+  content: "\e903";
+}
+
+.icon-email:before {
+  content: "\e904";
+}
+
+.icon-github:before {
+  content: "\e905";
+}
+
+.icon-linkedin:before {
+  content: "\e906";
+}
+
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Raleway';
 }
 
 body {
   margin: 0;
   padding: 0;
   font-size: 14px;
+  font-family: 'Raleway';
 }
 
 h1 {
@@ -129,6 +180,10 @@ header {
   padding: 0 20px 0 20px;
 }
 
+.contact-icons .icon {
+  font-size: 26px;
+}
+
 .contact-icons .icon img {
   width: 30px;
 }
@@ -168,8 +223,12 @@ header {
   margin-bottom: 10px;
 }
 
-.card__image img {
-  width: 50px;
+.card__icon {
+  font-size: 26px;
+}
+
+.card__icon svg, .card__icon img {
+  width: 30px;
 }
 
 .card__content {
@@ -193,4 +252,17 @@ header {
 }
 
 /* End Scroll Animation */
+footer {
+  text-align: center;
+}
+
+.footer-test {
+  font-size: 80px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer-test:hover {
+  color: #5f8dc1;
+}
 /*# sourceMappingURL=styles.css.map */
