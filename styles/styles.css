@@ -115,7 +115,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 14px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
 
 h1 {
@@ -206,6 +206,26 @@ header {
   left: -25%;
 }
 
+.section-header-line {
+  border-top: solid black 1px;
+  width: 30%;
+  position: relative;
+}
+
+.section-header-line__left {
+  top: 30px;
+  left: 10px;
+}
+
+.section-header-line__right {
+  bottom: 28px;
+  left: 214px;
+}
+
+.services__header h1 {
+  text-align: center;
+}
+
 .card {
   text-align: center;
   padding: 10px 10px 10px 10px;
@@ -227,7 +247,8 @@ header {
   font-size: 26px;
 }
 
-.card__icon svg, .card__icon img {
+.card__icon svg,
+.card__icon img {
   width: 30px;
 }
 
@@ -254,15 +275,5 @@ header {
 /* End Scroll Animation */
 footer {
   text-align: center;
-}
-
-.footer-test {
-  font-size: 80px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.footer-test:hover {
-  color: #5f8dc1;
 }
 /*# sourceMappingURL=styles.css.map */

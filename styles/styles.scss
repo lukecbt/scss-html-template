@@ -1,7 +1,7 @@
-@import './breakpoints';
-@import './colors';
-@import './fonts';
-@import './icons';
+@import "./breakpoints";
+@import "./colors";
+@import "./fonts";
+@import "./icons";
 
 *,
 *::before,
@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: $mobileBodyFontSize;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
 
 h1 {
@@ -25,7 +25,6 @@ h2 {
 }
 
 h3 {
-
 }
 
 header {
@@ -65,14 +64,13 @@ header {
 
   &__title {
   }
-  
+
   &__subtitle {
     font-size: $mobileBodyFontSize;
     @media (min-width: $mobile) {
-      
     }
   }
-  
+
   &__content {
   }
 }
@@ -109,8 +107,26 @@ header {
   left: -25%;
 }
 
-.services {
+.section-header-line {
+  border-top: solid black 1px;
+  width: 30%;
+  position: relative;
+  &__left {
+    top: 30px;
+    left: 10px;
+  }
+  &__right {
+    bottom: 28px;
+    left: 214px;
+  }
+}
 
+.services {
+  &__header {
+    h1 {
+      text-align: center;
+    }
+  }
 }
 
 .card {
@@ -129,18 +145,17 @@ header {
   }
 
   &__header {
-
   }
 
-  &__icon {  
+  &__icon {
     font-size: 26px;
 
-    svg, img {
+    svg,
+    img {
       width: 30px;
     }
   }
   &__title {
-
   }
   &__content {
     font-size: $mobileBodyFontSize;
@@ -155,7 +170,7 @@ header {
   opacity: 0;
   transition: 1s all ease;
 
-  &.active{
+  &.active {
     transform: translateY(0);
     opacity: 1;
   }
@@ -165,12 +180,4 @@ header {
 
 footer {
   text-align: center;
-}
-
-.footer-test {
-  font-size: 80px;
-  transition: 0.3s;
-  &:hover {
-    color:rgb(95, 141, 193);
-  }
 }
